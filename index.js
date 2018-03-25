@@ -32,10 +32,8 @@ searchInput.addEventListener(
     const searchTerm = e.target.value;
 
     if (searchTerm == "" || searchTerm == null) {
-      console.log("searchTerm", searchTerm);
       searchReddit("funny").then(data => console.log(data));
     } else {
-      console.log("searchTerm", searchTerm);
       searchReddit(searchTerm).then(results => {
         // let resultDiv = '<div class="card-columns">';
 
